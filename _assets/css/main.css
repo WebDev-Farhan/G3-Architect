@@ -4,3 +4,150 @@
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
 }
+/*---Header Section---*/
+header {
+  background: #ff900e1a;
+  padding: 50px 240px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+nav li a {
+  text-decoration: none;
+  color: #424242;
+}
+nav a {
+  color: #131313;
+  text-decoration: none;
+}
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.section-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.section-description {
+  color: #727272;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+.banner img {
+  margin-top: 20px;
+  width: 100%;
+}
+/*-----MAin----*/
+.primary-btn {
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 1rem 1.25rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+}
+main {
+  max-width: 1440px;
+  margin: 70px auto;
+}
+.team {
+  display: flex;
+  align-items: center;
+}
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.team-content {
+  padding-right: 4.375rem;
+  padding-left: 4.375rem;
+}
+.team-title {
+  font-size: 2.81rem;
+}
+.title-first-part {
+  font-weight: 500;
+}
+.title-second-part {
+  color: #131313;
+  font-weight: 700;
+}
+.title-last-part {
+  color: #ff900e;
+  font-weight: 700;
+}
+.facts-card-container{
+  margin-top: 6.25rem;
+  display: flex;
+  justify-content: space-around;
+}
+.facts-card{
+  padding: 2.8rem ;
+  text-align: center;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+}
+.card-stats{
+  color: #424242;
+font-size: 45px;
+font-weight: 600;
+}
+/*----Responsive Design----*/
+/*--Mobile devices---*/
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .team {
+    flex-direction: column-reverse;
+  }
+  .team-img-container{
+    grid-template-columns: 1fr;
+  }
+  .team button{
+    margin-bottom: 15px;
+  }
+  .team-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*---Tablets---*/
+@media screen and (min-width: 567px) and (max-width: 992px) {
+  header {
+    padding: 40px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .team {
+    flex-direction: column-reverse;
+  }
+  .team button{
+    margin-bottom: 15px;
+  }
+  .team-content{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
