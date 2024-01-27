@@ -1,0 +1,106 @@
+/*----Responsive Design----*/
+/*--Mobile devices---*/
+@media screen and (max-width: 576px) {
+    header {
+      padding: 20px;
+    }
+    .feature-img img{
+      width: 90%;
+      margin-left: 0;
+    }
+    .ten-years-badge{
+     position: static;
+     max-width: 170px;
+    }
+    nav,
+    .facts-card-container,
+    .sponsors-img-container,
+    .features {
+      flex-direction: column;
+    }
+    .team {
+      flex-direction: column-reverse;
+    }
+    .team-img-container {
+      grid-template-columns: 1fr;
+    }
+    .team button {
+      margin-bottom: 15px;
+    }
+    .team-content,
+    .facts-card-container,
+    .sponsors-img-container,
+    .features {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .facts{
+      padding: 19px;
+    }
+    .facts-card-container {
+      gap: 20px;
+    }
+    footer{
+      margin: 60px 19px;
+      padding: 50px 19px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  /*---Tablets---*/
+  @media screen and (min-width: 567px) and (max-width: 992px) {
+    header {
+      padding: 40px;
+    }
+    main {
+      min-width: 576;
+      max-width: 992px;
+      margin: 20px auto;
+    }
+    .feature-img {
+      padding-left: 5rem;
+      width: 80%;
+    }
+    .facts{
+      padding: 19px;
+    }
+    nav,
+    .facts-card-container,
+    .sponsors-img-container,
+    .features {
+      flex-direction: column;
+    }
+    .team {
+      flex-direction: column-reverse;
+    }
+    .team button {
+      margin-bottom: 15px;
+    }
+    .team-img-container {
+      gap: 30px;
+      align-items: center;
+      margin: 0 0 -5px 1.5rem;
+    }
+    .team-img-container img {
+      width: 90%;
+      
+    }
+    .team-content,
+    .facts-card-container,
+    .sponsors-img-container,
+    .features {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .facts-card-container {
+      gap: 20px;
+    }
+    footer{
+      margin: 60px 19px;
+      padding: auto;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
